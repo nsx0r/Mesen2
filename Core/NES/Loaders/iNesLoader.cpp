@@ -81,7 +81,7 @@ void iNesLoader::LoadRom(RomData& romData, vector<uint8_t>& romFile, NesHeader *
 		MessageManager::Log("[iNes] Invalid file (file length does not match header information) - load operation cancelled.");
 		romData.Error = true;
 	} else if(prgSize + chrSize < dataSize) {
-		MessageManager::Log("[iNes] Warning: File is larger than excepted (based on the file header).");
+		MessageManager::Log("[iNes] Warning: File is larger than expected (based on the file header).");
 	}
 
 	if(!romData.Error) {
